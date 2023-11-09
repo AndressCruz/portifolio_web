@@ -1,12 +1,153 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     Color: black;
 }
 
-.font-nav {
-    color: black;
-    font-size: 1.5rem;
-    font-weight: bold;
+.nav-transition {
+    animation-name: navegacao;
+    animation-duration: 5s;
+    background-color: #ff6f3c;
 }
 
+.nav-transition li.threeline-icon {
+    display: none;
+}
+
+.span-break {
+    display: block;
+}
+
+.font-name {
+    font-size: 5rem;
+    color: #ff9a3c;
+}
+
+.first-color {
+    background: #155263;
+}
+
+.first-color-font {
+    color: #155263 !important;
+}
+
+.second-color {
+    background: #ff6f3c;
+}
+
+.second-color-font {
+    color: #ff6f3c;
+}
+
+.third-color {
+    background: #ff9a3c;
+}
+
+.fourth-color {
+    background: #ffc93c;
+}
+
+.fourth-color-font {
+    color: #ffc93c;
+}
+
+.font-nav {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #155263 !important;
+}
+
+.profile-pic {
+    margin-top: 4rem;
+
+    animation-name: profile-capa;
+    animation-duration: 3s;
+}
+
+.transition-name {
+    animation-name: titulo-capa;
+    animation-duration: 3s;
+}
+
+@keyframes profile-capa {
+    0% {
+        transform: translate(0px, 20px);
+    }
+
+    100% {
+        transform: translate(0px, 0px)
+    }
+}
+
+@keyframes titulo-capa {
+    0% {
+        transform: translate(0px, -20px);
+    }
+
+    100% {
+        transform: translate(0px, 0px)
+    }
+}
+
+@keyframes navegacao {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 92%;
+    }
+
+    .nav-transition li {
+        display: none;
+    }
+
+    .nav-transition li.threeline-icon {
+        display: inline-block;
+    }
+
+    .profile-pic {
+        width: 32rem;
+        margin-top: 3rem;
+
+
+        animation-name: profile-capa;
+        animation-duration: 3s;
+    }
+
+    .menu {
+        height: auto;
+    }
+
+    .menu ul {
+        height: auto;
+        text-align: center;
+        display: block;
+        padding: 0 20px;
+    }
+
+    .menu li {
+        display: block;
+        border-bottom: solid #155263 1px;
+    }
+
+    .menu li.threeline-icon {
+        display: block;
+        border-bottom: solid #155263 1px;
+    }
+
+    .menu a {
+        text-decoration: none;
+    }
+}
