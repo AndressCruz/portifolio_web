@@ -1,3 +1,5 @@
+const PATHNAME = window.location.href;
+
 function myFunction() {
     var navbar = document.getElementById("navbar");
     
